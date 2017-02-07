@@ -1,0 +1,148 @@
+$primary: #303F9F;
+$border-radius: 3px;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	margin: 0px;
+}
+*:focus{
+	outline: none;
+}
+
+.editor-components{
+	width: 400px;
+	position: fixed;
+	right: 10px;
+	top: 74px;
+}
+
+.main-template-div{
+	position: absolute;
+	top: 74px;
+	left: 10px;
+	width: calc(100% - 430px);
+	border: 1px dashed #303F9F;
+}
+
+.template-div{
+	margin: 0px 100px;
+}
+
+.structure-table-samples{
+	height: 50px;
+	width: 100%;
+	margin: 10px 0px;
+	table-layout: fixed;
+}
+
+.structure-table-samples tr:hover td{
+	cursor: pointer;
+	box-shadow: 0px 5px 10px 1px grey;
+}
+
+.structure-table-samples td{
+	border: 1px solid $primary;
+	border-radius: $border-radius;
+	vertical-align: top;
+}
+
+.extern-row{
+	border: 1px solid $primary;
+	border-top: none;
+}
+
+.extern-row .content-component:hover{
+	box-shadow: 0px 5px 10px 1px grey;
+}
+
+.structure-table{
+	width: 100%;
+	table-layout: fixed;
+	border-spacing: 0px;
+}
+
+.content-settings{
+	position: fixed;
+    padding: 5px;
+    margin-left: -1px;
+    margin-top: 0px;
+    display:none;
+    background: #fff;
+    border: 1px solid #303F9F;
+}
+
+.structure-settings{
+	position: fixed;
+	left: 34px;
+	margin-top: -22px;
+    border-bottom: 1px dashed #303F9F;
+}
+
+.content-settings:hover{
+    display:block;
+}
+
+.editable-content-wrapper{
+	border: 1px dashed #303F9F;
+}
+
+.editable-content-wrapper:hover{
+	border: 1px solid #303F9F;
+}
+
+.editable-content-wrapper:hover .content-settings{
+	display: block;
+}
+
+.component-placeholder{
+	border: 1px dashed rgb(92, 107, 192);
+	background-color: rgb(232, 234, 246);
+	padding: 20px;
+}
+
+.edit-components{
+    position: fixed;
+    top: 74px;
+    height: calc(100% - 104px);
+    overflow: scroll;
+    right: 10px;
+    padding: 0px 20px 20px 20px;
+    z-index: 999;
+    width: 358px;
+	border: 1px solid #303F9F;
+    background: white;
+}
+
+.hide {
+	display: none;
+}
+
+.structure-wrapper{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.number-input{
+	width: 100px;
+}
+
+.sketch-picker{
+	z-index: 9999;
+	position: absolute;
+}
+
+.clipboard-copy-button{
+	background: white;
+	border: 1px solid #3F51B5;
+	padding: 10px;
+	font-size: 18px;
+	color: #3F51B5;
+	cursor: pointer;
+}
+
+.clipboard-copy-button:hover{
+	background: rgba(63, 81, 181, 0.1);
+}
